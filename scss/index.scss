@@ -1,0 +1,129 @@
+@import "base";
+
+// light mode
+.caculator {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: $dark-shadow-bigger;
+  .buttons {
+    position: relative;
+    display: grid;
+    #value {
+      position: relative;
+      grid-column: span 4;
+      overflow: none;
+      text-align: end;
+      width: 100%;
+      line-height: 100px;
+      box-shadow: $light-shadow-inset;
+      border-radius: 10px;
+      padding: 0 20px;
+      color: $blue-color;
+      font-size: 2.5em;
+      font-weight: bold;
+    }
+    span {
+      position: relative;
+      padding: 5px;
+      box-shadow: $light-shadow;
+      margin: 10px;
+      cursor: pointer;
+      user-select: none;
+      min-width: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5em;
+      color: #666;
+      border: 2px solid $light-border;
+      box-shadow: $shadow-2;
+      border-radius: 10px;
+      &:active {
+        box-shadow: $shadow-2-inset;
+        color: $red-color;
+      }
+    }
+    span#clear {
+      grid-column: span 2;
+      font-weight: bold;
+      color: $red-color;
+      font-weight: bold;
+      font-size: 2em;
+      &:active {
+        color: $green-color;
+      }
+    }
+    span#plus {
+      grid-row: span 2;
+      color: $blue-color;
+      font-weight: bold;
+      font-size: 2em;
+      &:active {
+        color: $red-color;
+      }
+    }
+    span#equal {
+      font-weight: bold;
+      color: $green-color;
+      font-weight: bold;
+      font-size: 1.5em;
+      &:active {
+        color: $red-color;
+      }
+    }
+  }
+}
+#darkModeToggle {
+  padding: 5px;
+  box-shadow: $light-shadow;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  color: #666;
+  border: 2px solid $light-border;
+  box-shadow: $shadow-2;
+  border-radius: 50%;
+  &:active {
+    box-shadow: $shadow-2-inset;
+    color: $red-color;
+  }
+  i {
+    padding: 5px 7px;
+  }
+}
+
+// dark mode
+.dark-mode .caculator {
+  background-color: #33393e;
+  box-shadow: $light-shadow-bigger;
+  #value {
+    background-color: #33393e;
+    color: $light-color;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25) inset,
+      -10px -10px 20px rgba(255, 255, 255, 0.1) inset;
+  }
+  span {
+    color: $light-color;
+    border: 2px solid $dark-border;
+    box-shadow: $dark-shadow;
+    &:active {
+      box-shadow: $dark-shadow-inset;
+    }
+  }
+}
+.dark-mode #darkModeToggle {
+  color: $light-color;
+  border: 2px solid $dark-border;
+  box-shadow: $dark-shadow;
+  &:active {
+    box-shadow: $dark-shadow-inset;
+  }
+  i {
+    padding: 5px;
+  }
+}
