@@ -117,7 +117,7 @@ a {
 }
 #darkModeToggle:active {
   box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px #fff;
-  color: #f44336;
+  color: #282c2f;
 }
 #darkModeToggle i {
   padding: 5px 7px;

@@ -5,7 +5,7 @@ const componentsDarkMode = document.querySelectorAll(
 const iconDarkMode = document.querySelector("#darkModeToggle i");
 
 // Xác định trạng thái hiện tại của Dark Mode
-let isDarkMode = true;
+let isDarkMode = false;
 // Hàm chuyển đổi giữa Dark Mode và Light Mode
 export default function handlerDarkModeToggle() {
   if (isDarkMode) {
