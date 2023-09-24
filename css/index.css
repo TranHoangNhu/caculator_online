@@ -25,13 +25,14 @@ a {
 .caculator {
   position: relative;
   width: 100%;
-  padding: 20px;
+  padding: 30px;
   border-radius: 20px;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 .caculator .buttons {
   position: relative;
   display: grid;
+  gap: 20px;
 }
 .caculator .buttons #value {
   position: relative;
@@ -44,14 +45,14 @@ a {
   border-radius: 10px;
   padding: 0 20px;
   color: #5166d6;
-  font-size: 2.5em;
+  font-size: 3em;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 .caculator .buttons span {
   position: relative;
   padding: 5px;
   box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px;
-  margin: 10px;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
