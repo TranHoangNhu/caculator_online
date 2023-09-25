@@ -5,6 +5,7 @@
   position: relative;
   width: 100%;
   padding: 30px;
+  border: 2px solid $light-border;
   border-radius: 20px;
   box-shadow: $dark-shadow-bigger;
   .buttons {
@@ -42,7 +43,7 @@
       border: 2px solid $light-border;
       box-shadow: $shadow-2;
       border-radius: 10px;
-      // transition: active 0.01s;
+      transition: active 0.01s;
       &:active, &.active {
         box-shadow: $shadow-2-inset;
       }
@@ -88,7 +89,6 @@
   font-size: 1.5em;
   color: #666;
   border: 2px solid $light-border;
-  box-shadow: $shadow-2;
   border-radius: 50%;
   &:active {
     box-shadow: $shadow-2-inset;
@@ -102,6 +102,7 @@
 // dark mode
 .dark-mode .caculator {
   background-color: #33393e;
+  border: 2px solid $dark-border;
   box-shadow: $light-shadow-bigger;
   #value {
     background-color: #33393e;

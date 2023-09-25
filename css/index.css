@@ -26,6 +26,7 @@ a {
   position: relative;
   width: 100%;
   padding: 30px;
+  border: 2px solid #edf1f4;
   border-radius: 20px;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
@@ -67,6 +68,7 @@ a {
   border: 2px solid #edf1f4;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px #fff;
   border-radius: 10px;
+  transition: active 0.01s;
 }
 .caculator .buttons span:active, .caculator .buttons span.active {
   box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px #fff;
@@ -113,7 +115,6 @@ a {
   font-size: 1.5em;
   color: #666;
   border: 2px solid #edf1f4;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px #fff;
   border-radius: 50%;
 }
 #darkModeToggle:active {
@@ -126,6 +127,7 @@ a {
 
 .dark-mode .caculator {
   background-color: #33393e;
+  border: 2px solid #333;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25), -5px -5px 10px rgba(255, 255, 255, 0.1);
 }
 .dark-mode .caculator #value {
@@ -139,7 +141,7 @@ a {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25), -5px -5px 10px rgba(255, 255, 255, 0.1);
 }
 .dark-mode .caculator span:active, .dark-mode .caculator span.active {
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25) inset, -5px -5px 10px rgba(255, 255, 255, 0.1) inset;
+  box-shadow: 5px -8px 10px rgba(0, 0, 0, 0.25), -5px -5px 10px rgba(255, 255, 255, 0.1);
 }
 
 .dark-mode #darkModeToggle {
@@ -148,7 +150,7 @@ a {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25), -5px -5px 10px rgba(255, 255, 255, 0.1);
 }
 .dark-mode #darkModeToggle:active {
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25) inset, -5px -5px 10px rgba(255, 255, 255, 0.1) inset;
+  box-shadow: 5px -8px 10px rgba(0, 0, 0, 0.25), -5px -5px 10px rgba(255, 255, 255, 0.1);
 }
 .dark-mode #darkModeToggle i {
   padding: 5px;
