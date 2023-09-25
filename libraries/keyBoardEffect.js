@@ -49,6 +49,7 @@ export default function handleKeyboard() {
       spanElements.forEach(function (span) {
         if (span.textContent === spanContent) {
           span.classList.add("active");
+          span.click();
         }
       });
     }

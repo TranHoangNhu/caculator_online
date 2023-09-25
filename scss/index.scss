@@ -42,6 +42,7 @@
       border: 2px solid $light-border;
       box-shadow: $shadow-2;
       border-radius: 10px;
+      transition: active 0.01s;
       &:active, &.active {
         box-shadow: $shadow-2-inset;
       }
