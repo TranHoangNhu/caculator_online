@@ -45,9 +45,10 @@ a {
   border-radius: 10px;
   padding: 0 20px;
   color: #5166d6;
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: bold;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 .caculator .buttons span {
   position: relative;
@@ -67,9 +68,8 @@ a {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px #fff;
   border-radius: 10px;
 }
-.caculator .buttons span:active {
+.caculator .buttons span:active, .caculator .buttons span.active {
   box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 10px #fff;
-  color: #f44336;
 }
 .caculator .buttons span#clear {
   grid-column: span 2;
@@ -126,7 +126,7 @@ a {
 
 .dark-mode .caculator {
   background-color: #33393e;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25), -10px -10px 20px rgba(255, 255, 255, 0.1);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25), -5px -5px 10px rgba(255, 255, 255, 0.1);
 }
 .dark-mode .caculator #value {
   background-color: #33393e;
@@ -138,7 +138,7 @@ a {
   border: 2px solid #333;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25), -5px -5px 10px rgba(255, 255, 255, 0.1);
 }
-.dark-mode .caculator span:active {
+.dark-mode .caculator span:active, .dark-mode .caculator span.active {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25) inset, -5px -5px 10px rgba(255, 255, 255, 0.1) inset;
 }
 

@@ -1,3 +1,7 @@
-import handlerDarkModeToggle from "./themes.js";
+import handlerDarkModeToggle from "./libraries/themes.js";
+import handleKeyboard from "./libraries/keyBoardEffect.js";
+import handleSoundEffect from "./libraries/soundEffect.js";
 
 handlerDarkModeToggle();
+handleKeyboard();
+handleSoundEffect();
