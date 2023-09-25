@@ -3,5 +3,5 @@ import handleKeyboard from "./libraries/keyBoardEffect.js";
 import handleSoundEffect from "./libraries/soundEffect.js";
 
 handlerDarkModeToggle();
-handleKeyboard();
 handleSoundEffect();
+handleKeyboard();

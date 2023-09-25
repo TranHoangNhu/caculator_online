@@ -1,4 +1,6 @@
 export default function handleKeyboard() {
+  var clearCalc = document.querySelector("#clear");
+  var resultCalc = document.querySelector("#equal");
   // Lấy tất cả các phần tử <span> không có class name
   var spanElements = document.querySelectorAll("span:not([class])");
   var keycodeMapping = {
@@ -38,7 +40,15 @@ export default function handleKeyboard() {
   window.addEventListener("keydown", function (event) {
     // Lấy keycode từ sự kiện
     var keycode = event.keyCode || event.which;
-
+    console.log(keycode);
+    if (keycode === 8) {
+      clearCalc.classList.add("active");
+      clearCalc.click();
+    }
+    if (keycode === 13) {
+      resultCalc.classList.add("active");
+      resultCalc.click();
+    }
     // Lấy nội dung tương ứng với keycode từ đối tượng ánh xạ
     var spanContent = Object.keys(keycodeMapping).find(function (content) {
       return keycodeMapping[content] === keycode;
@@ -58,6 +68,12 @@ export default function handleKeyboard() {
     // Lấy keycode từ sự kiện
     var keycode = event.keyCode || event.which;
 
+    if (keycode === 8) {
+      clearCalc.classList.remove("active");
+    }
+    if (keycode === 13) {
+      resultCalc.classList.remove("active");
+    }
     // Lấy nội dung tương ứng với keycode từ đối tượng ánh xạ
     var spanContent = Object.keys(keycodeMapping).find(function (content) {
       return keycodeMapping[content] === keycode;
